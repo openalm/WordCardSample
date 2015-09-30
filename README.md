@@ -1,6 +1,6 @@
 ## WordCard  
 &copy; Anand Gaurav (OpenALM)
-A sample getting started Android app
+<br>A sample getting started Android app
 
 ### Code
 
