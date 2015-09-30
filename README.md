@@ -11,7 +11,7 @@
 ### Build
 
 
-### Deploy using VSO Build
+### Deploy to HockeyApp
 
 
 
