@@ -7,6 +7,16 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        <!-- HockeyApp specific code -->
+        <activity android:name="net.hockeyapp.android.UpdateActivity" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <activity android:name="net.hockeyapp.android.FeedbackActivity" />
+        <activity android:name="net.hockeyapp.android.PaintActivity" />
+
+        <!-- Finish HockeyApp section -->
+
+
         <activity
             android:name=".StartActivity"
             android:label="@string/app_name" >

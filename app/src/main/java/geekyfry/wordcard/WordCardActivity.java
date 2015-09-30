@@ -20,6 +20,10 @@ import geekyfry.wordcard.model.Word;
 import geekyfry.wordcard.service.WordService;
 import geekyfry.wordcard.tools.AppData;
 
+import net.hockeyapp.android.CrashManager;
+import net.hockeyapp.android.Tracking;
+import net.hockeyapp.android.UpdateManager;
+
 
 public class WordCardActivity extends ActionBarActivity {
 
@@ -78,6 +82,10 @@ public class WordCardActivity extends ActionBarActivity {
             }
         });
         setNextWord();
+        
+        // HockeyApp
+        checkForUpdates();
+        
     }
 
     private void setupListViewSelectorBtn() {
@@ -90,6 +98,33 @@ public class WordCardActivity extends ActionBarActivity {
             }
         });
     }
+
+    /**
+     * Dispatch onPause() to fragments.
+     */
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Tracking.stopUsage(this);
+        UpdateManager.unregister();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Tracking.startUsage(this);
+        checkForCrashes();
+    }
+
+    private void checkForCrashes() {
+        CrashManager.register(this, "d54e1dca76f34a03619705831df21a2c");
+    }
+
+    private void checkForUpdates() {
+        // Remove this for store / production builds!
+        UpdateManager.register(this, "d54e1dca76f34a03619705831df21a2c");
+    }
+
 
     private void setupRandomSelectorBtn() {
         ViewGroup settingRandom = (ViewGroup) findViewById(R.id.randomVG);
@@ -165,9 +200,7 @@ public class WordCardActivity extends ActionBarActivity {
         if(showRandom == false) {
             Intent alphaIntent = new Intent(getApplicationContext(), AlphabetSelectorActivity.class);
             startActivityForResult(alphaIntent, 0);
-
         }
-
     }
 
     @Override
