@@ -1,2 +1,16 @@
-## WordCard  &copy; Anand Gaurav (OpenALM)
-A sample Android app to get started
+## WordCard  
+&copy; Anand Gaurav (OpenALM)
+A sample getting started Android app
+
+### Code
+
+#### App
+
+#### Integrating HockeyApp
+
+### Build
+
+
+### Deploy
+
+
