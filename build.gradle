@@ -17,6 +17,10 @@ allprojects {
     repositories {
         jcenter()
         mavenCentral()
+		def androidHome = System.getenv("ANDROID_HOME")
+        maven {
+            url "$androidHome/extras/android/support/"
+        }
     }
 }
 
