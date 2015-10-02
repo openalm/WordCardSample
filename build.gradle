@@ -19,7 +19,7 @@ allprojects {
         mavenCentral()
 		def androidHome = System.getenv("ANDROID_HOME")
         maven {
-            url "$androidHome/extras/android/support/"
+            url "$androidHome/extras/android/m2repository/"
         }
     }
 }
