@@ -2,14 +2,13 @@
 &copy; Anand Gaurav (OpenALM)
 <br>WordCard is a simple Android app that helps users improve their English vocabulary. 
 
-### Code
-This app uses native Android programming using Android Studio. 
 #### About the app
 This app 'WordCard' is useful in improving one's English vocabulary. It uses a static list of interesting Enginsh words and prompts the users to guess the meaning of the word before she can view the actual word definition/meaning.
 One can use the *random* mode or *aphabetical* mode.
 Also shows the users list of all the words and its definitions/meanings.
 
-#### Technical overview of the app
+### Code
+This app uses native Android programming using Android Studio. 
 * Uses basic Android programming.
 * Tries to use Google's material design
 * Target devices: Android Lollipop (5.0 and above)
