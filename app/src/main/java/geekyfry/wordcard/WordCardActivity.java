@@ -117,12 +117,12 @@ public class WordCardActivity extends ActionBarActivity {
     }
 
     private void checkForCrashes() {
-        CrashManager.register(this, "d54e1dca76f34a03619705831df21a2c");
+        CrashManager.register(this, "APP_ID");
     }
 
     private void checkForUpdates() {
         // Remove this for store / production builds!
-        UpdateManager.register(this, "d54e1dca76f34a03619705831df21a2c");
+        UpdateManager.register(this, "APP_ID");
     }
 
 
