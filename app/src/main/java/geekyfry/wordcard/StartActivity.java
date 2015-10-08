@@ -1,7 +1,7 @@
 package geekyfry.wordcard;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +18,7 @@ import geekyfry.wordcard.model.Word;
 import geekyfry.wordcard.service.WordService;
 
 
-public class StartActivity extends ActionBarActivity {
+public class StartActivity extends Activity {
 
 //    private List<Word> wordList = WordService.wordList;
 

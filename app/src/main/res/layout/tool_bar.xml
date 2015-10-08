@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cColorPrimary"
-    android:elevation="7dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:elevation="7dp">
 
 </android.support.v7.widget.Toolbar>

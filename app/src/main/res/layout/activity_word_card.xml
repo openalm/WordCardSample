@@ -108,7 +108,7 @@
                 android:layout_marginLeft="10dp"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/cWhite"
-                android:textSize="@dimen/abc_text_size_small_material" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 
@@ -121,7 +121,7 @@
             android:layout_marginTop="20dp"
             android:text="'the meaning'"
             android:textColor="#CCCCCC"
-            android:textSize="@dimen/abc_text_size_medium_material" />
+            android:textSize="15dp" />
         <!--</RelativeLayout>-->
 
         <TextView
@@ -133,7 +133,7 @@
             android:layout_marginTop="10dp"
             android:text="Usage: 'the meaning'"
             android:textColor="#CCCCCC"
-            android:textSize="@dimen/abc_text_size_medium_material" />
+            android:textSize="18dp" />
         <!--</LinearLayout>-->
     </RelativeLayout>
 

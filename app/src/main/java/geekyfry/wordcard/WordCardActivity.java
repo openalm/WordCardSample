@@ -1,8 +1,8 @@
 package geekyfry.wordcard;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +25,7 @@ import net.hockeyapp.android.Tracking;
 import net.hockeyapp.android.UpdateManager;
 
 
-public class WordCardActivity extends ActionBarActivity {
+public class WordCardActivity extends Activity {
 
 
     private static final float MIN_DISTANCE = (float) 150.0;
@@ -77,8 +77,8 @@ public class WordCardActivity extends ActionBarActivity {
         vg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent alphaIntent = new Intent(getApplicationContext(), AlphabetSelectorActivity.class);
-                startActivityForResult(alphaIntent, 0);
+//                Intent alphaIntent = new Intent(getApplicationContext(), AlphabetSelectorActivity.class);
+//                startActivityForResult(alphaIntent, 0);
             }
         });
         setNextWord();
@@ -93,8 +93,8 @@ public class WordCardActivity extends ActionBarActivity {
         settingRandom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), WordListActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), WordListActivity.class);
+//                startActivity(intent);
             }
         });
     }
@@ -198,8 +198,8 @@ public class WordCardActivity extends ActionBarActivity {
         sharedPreferences.edit().putBoolean(PREF_RANDOM, showRandom).commit();
 
         if(showRandom == false) {
-            Intent alphaIntent = new Intent(getApplicationContext(), AlphabetSelectorActivity.class);
-            startActivityForResult(alphaIntent, 0);
+//            Intent alphaIntent = new Intent(getApplicationContext(), AlphabetSelectorActivity.class);
+//            startActivityForResult(alphaIntent, 0);
         }
     }
 
