@@ -1,0 +1,1 @@
+echo ##vso[build.uploadsummary]%1
