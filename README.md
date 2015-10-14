@@ -21,8 +21,8 @@ Baisc integrations are already done in this app to collect usage info and crash 
 ### Build using Visual studio Online
 The app needs gradle to build and hence you would need Gradle task to build the application. Just use the Gradle build task/step and provide the following inputs:
 * **Gradle Wrapper:** path to **gradlew.bat** file 
-* **Task:** assemple
-There would be certain issues in building this project as certain library dependencies cannot be resolved through the online maven or jcenter repos. You would need to download the Android support libraries through Android SDK Manager on the agent machine and point gradle to local repo. 
+* **Task:** assemble
+There may be certain issues in building this project as certain library dependencies cannot be resolved through the online maven or jcenter repos. **If so**, you would need to download the Android support libraries through Android SDK Manager on the agent machine and point gradle to local repo. 
 Reach out to me for more info, if required.
 
 ### Deploy to HockeyApp
